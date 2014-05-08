@@ -1,0 +1,51 @@
+body {
+  background: #222;
+}
+
+#gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 810px;
+  height: 410px;
+  background: #FFF;
+  padding-top: 1px;
+  margin: -205px 0 0 -405px;
+}
+
+.gallery-content {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 4px 5px 5px 5px;
+}
+
+.gallery-photoview {
+  position: absolute;
+  float: left;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  z-index: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.gallery-photoview.activated {
+  z-index: 1;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+
+.gallery-photoview-content {
+  width: 190px;
+  height: 190px;
+  background-color: #CCC;
+  margin: 5px 5px;
+  background-size: auto 190px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+}
