@@ -31,6 +31,9 @@ body {
   pointer-events: auto;
 }
 
+.gallery-photoview:hover {
+  opacity: 0.75;
+}
 
 .gallery-photoview.activated {
   z-index: 1;

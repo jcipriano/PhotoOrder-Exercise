@@ -5,8 +5,6 @@
   gallery.PhotoView = function (data) {
 
     this.data = data;
-    this.html = htmlTmp.replace('{{id}}', data.id).replace('{{src}}', data.src).replace('{{name}}', data.name);
-    this.el = $(this.html);
     this.events = new EventPublisher();
   };
 
