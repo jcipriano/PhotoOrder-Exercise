@@ -1,5 +1,33 @@
 body {
-  background: #222;
+  background: -webkit-linear-gradient(top, #666, #222);
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: -webkit-linear-gradient(top, #333, #222);
+  color: #EEE;
+  line-height: 50px;
+}
+
+header .content {
+  padding: 0 20px;
+}
+
+h1 {
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0;
+}
+
+span.float-right {
+  float: right;
+}
+
+a {
+  color: #EEE;
+  text-decoration: none;
 }
 
 #gallery {
@@ -8,7 +36,7 @@ body {
   left: 50%;
   width: 810px;
   height: 410px;
-  background: #FFF;
+  background: -webkit-linear-gradient(top, #FFF, #EEE);
   padding-top: 1px;
   margin: -205px 0 0 -405px;
 }
@@ -31,14 +59,15 @@ body {
   pointer-events: auto;
 }
 
-.gallery-photoview:hover {
-  opacity: 0.75;
-}
 
 .gallery-photoview.activated {
   z-index: 1;
   opacity: 0.75;
   pointer-events: none;
+}
+
+.gallery-photoview:hover {
+  opacity: 0.65;
 }
 
 

@@ -5,6 +5,8 @@
   gallery.PhotoView = function (data) {
 
     this.data = data;
+    this.html = htmlTmp.replace('{{id}}', data.id).replace('{{src}}', data.src).replace('{{name}}', data.name);
+    this.el = $(this.html);
     this.events = new EventPublisher();
   };
 
@@ -18,9 +20,14 @@
 
     this.eventSetup();
 
+    var that = this;
+    $(window).resize(function () {
+      that.galleryOffset = $('.gallery-content').offset();
+    });
+
     return this.el;
   };
-  
+
   gallery.PhotoView.prototype.eventSetup = function () {
 
     var that = this;

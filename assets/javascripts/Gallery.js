@@ -100,7 +100,7 @@
     // timeout hack, got a little lazy here
     setTimeout(function () {
       currentPhotoView.hoverId = '';
-    }, 150);
+    }, 200);
 
     this.reorder();
   };
@@ -117,7 +117,7 @@
       photoView = this.photos[i];
 
       if(!photoView.isActive()){
-        photoView.setPosition(r * size, c * size, true);
+        photoView.setPosition(r * size, c * size, this.reordering);
       }
 
       if(r == rLen) {
@@ -127,6 +127,8 @@
         r = r + 1;
       }
     }
+
+    this.reordering = true;
   };
 
   // Document Ready
