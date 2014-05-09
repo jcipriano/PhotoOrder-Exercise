@@ -6,6 +6,8 @@ A UI development exercise.<br/>
 Live demo accessible here:<br/>
 [http://joncipriano.com/PhotoOrder-Exercise/](http://joncipriano.com/PhotoOrder-Exercise/ "Demo")<br/>
 
+Developed for: Safari 7.0.3, Chrome, iPad iOS 7 Safari<br/>
+
 ####zepto.js
 Zepto is a light-weight library with a jQuery-compatilble API. In this project it is used only for DOM management and DOM event binding. 
 
