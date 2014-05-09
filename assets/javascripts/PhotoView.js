@@ -61,8 +61,8 @@
 
       that.activate();
 
-      that.offsetX = that.galleryOffset.left + ((e.x ? e.x : e.pageX)- that.el.offset().left);
-      that.offsetY = that.galleryOffset.top + ((e.y ? e.y : e.pageY) - that.el.offset().top);
+      that.offsetX = that.galleryOffset.left + (e.pageX - that.el.offset().left);
+      that.offsetY = that.galleryOffset.top + (e.pageY - that.el.offset().top);
 
       that.stage.bind('touchmove', function(e){
         that.onDrag(e);
