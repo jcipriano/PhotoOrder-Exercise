@@ -1,7 +1,7 @@
 PhotoOrder-Exercise
 ===================
 
-A UI development exercise.<br/>
+A UI development test for a fruit company.<br/>
 
 Live demo accessible here:<br/>
 [http://joncipriano.com/PhotoOrder-Exercise/](http://joncipriano.com/PhotoOrder-Exercise/ "Demo")<br/>
